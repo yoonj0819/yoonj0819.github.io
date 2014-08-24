@@ -161,7 +161,6 @@ header.x-major nav ul li a:hover{
 .x-mobile nav ul li{
     width: 110px;
     height: 100px;
-    background-color: #b3d4fc;
 }
 
 
@@ -242,7 +241,6 @@ textarea {
 .x-bottom-menu nav ul li{
     width: 120px;
     height: 50px;
-    /*background-color: cornsilk;*/
 }
 
 .x-bottom-menu nav ul li a{
