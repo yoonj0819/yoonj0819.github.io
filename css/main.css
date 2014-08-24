@@ -90,7 +90,6 @@ a{
 
 .x-mobile {
     display: block;
-    display: block;
 }
 
 .x-com {
@@ -114,6 +113,7 @@ header.x-major .x-align-middle{
     height: 100%;
     content: '';
     vertical-align: middle;
+    text-align: left;
     display: inline-block;
     margin-left: -0.25em;
 }
@@ -159,16 +159,17 @@ header.x-major nav ul li a:hover{
 }*/
 
 .x-mobile nav ul li{
-    width: 120px;
+    width: 110px;
     height: 100px;
-    /*background-color: red;*/
+    background-color: #b3d4fc;
 }
 
 
 header.x-major {
     border-bottom: 3.5px solid rgba(0, 0, 0, 1);
-    max-width: 940px;
+    max-width: 340px;
 }
+
 
 textarea {
     resize: vertical;
@@ -180,8 +181,8 @@ textarea {
 }
 
 .text-clearfix{
-    width: 940px;
-    height: 180px;
+    width: 340px;
+    height: 360px;
 }
 
 .text-clearfix .x-title .y-align-middle .y-align-block{
@@ -194,11 +195,11 @@ textarea {
     font-weight: 900;
 }
 
-.text-clearfix .x-title .y-align-middle .z-align-block{
+.text-clearfix .x-title .y-align-middle .y-align-sub{
     color: rgba(0, 0, 0, 1);
     margin: 10px 0 0 0;
     letter-spacing: 0px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Helvetica Neue";
     text-decoration: none;
     text-transform: none;
@@ -215,13 +216,13 @@ textarea {
 .z-align-middle{
     display: inline-block;
     margin: 0 0 0 0;
-    width: 520px;
+    width: 340px;
     height: 110px;
     /*background-color: red;*/
     vertical-align: middle;
 }
 
-.xy-align-block {
+.z-align-block {
     color: rgba(0, 0, 0, 1);
     letter-spacing: -0.2px;
     font-size: 16px;
@@ -233,7 +234,7 @@ textarea {
 }
 .x-align-block {
     display: inline-block;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 .x-bottom-menu{
     margin: 10px auto 10px auto;
@@ -241,8 +242,9 @@ textarea {
 .x-bottom-menu nav ul li{
     width: 120px;
     height: 50px;
-    background-color: cornsilk;
+    /*background-color: cornsilk;*/
 }
+
 .x-bottom-menu nav ul li a{
     color: rgba(0, 0, 0, 1);
     letter-spacing: 1px;
@@ -252,6 +254,27 @@ textarea {
     font-weight: 600;
 }
 
+.footer{
+    max-width: 940px;
+    margin: 0 auto;
+    display: block;
+    border-top: 3.5px solid rgba(0, 0, 0, 1);
+    height: 47px;
+    background-position: center;
+    text-align: center;
+}
+
+.footer .x-align-block{
+    margin-top: 20px;
+    display: inline-block;
+    height: 80px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-transform: uppercase;
+}
 /*header.x-major .x-align-middle{
     display: inline-block;
     /*background-color: red;

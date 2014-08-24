@@ -31,13 +31,13 @@
         </h1>
         <nav>
             <ul>
-                <li class="x-align-middle">
-                    <a href="." class="x-align-block" style="color: darkorange">Works</a>
+                <li class="x-align-middle" style="text-align: left">
+                    <a href="." class="x-align-block" style="color: darkorange" >Works</a>
                 </li>
                 <li class="x-align-middle">
                     <a href="." class="x-align-block">Profile</a>
                 </li>
-                <li class="x-align-middle">
+                <li class="x-align-middle" style="text-align: right">
                     <a href="." class="x-align-block">Contact</a>
                 </li>
             </ul>
@@ -51,7 +51,7 @@
         <nav>
             <ul>
                 <li class="x-align-middle">
-                    <a href="." class="x-align-block">Works</a>
+                    <a href="." class="x-align-block" style="color: darkorange">Works</a>
                 </li>
                 <li class="x-align-middle">
                     <a href="." class="x-align-block">Profile</a>
@@ -64,15 +64,19 @@
     </div>
 </header>
 
+
+
+
 <style>
+/*========================= 모바일 스크린 영역 ================================================= */
     .container{
-        max-width: 300px;
+        max-width: 340px;
         margin: 30px auto 30px auto;
         /*background-color: bisque;*/
     }
     .box{
-        width: 300px;
-        height: 180px;
+        width: 340px;
+        height: 204px;
         float: none;
         margin: 0 auto 20px auto;
         padding: 0px;
@@ -80,8 +84,8 @@
         display: block;
     }
     .box-2{
-        width: 300px;
-        height: 180px;
+        width: 340px;
+        height: 204px;
         float: none;
         padding: 0px;
         margin-bottom: 20px;
@@ -99,7 +103,7 @@
     }
 
     .footer{
-        max-width: 940px;
+        max-width: 340px;
         margin: 0 auto;
         display: block;
         border-top: 3.5px solid rgba(0, 0, 0, 1);
@@ -169,8 +173,8 @@
 
     .caption-style-1 .blur {
         background-color: rgba(0, 0, 0, 0.7);
-        height: 180px;
-        width: 300px;
+        height: 204px;
+        width: 340px;
         z-index: 5;
         position: absolute;
     }
@@ -189,8 +193,8 @@
         position: absolute;
         text-align: center;
         vertical-align: middle;
-        width: 300px;
-        height: 180px;
+        width: 340px;
+        height: 204px;
     }
 
     .caption-style-1 .caption-text:before {
@@ -206,11 +210,40 @@
         top: 0;
     }
 
+
+
+/*========================= 컴퓨터 스크린 영역 ================================================= */
+
     @media only screen and (min-width: 960px) {
         /* 여기는 컴퓨터 스크린 영역 - Lier, 2014. 8. 14. 오후 6:43 */
         /*.box {
             width: 33.3%;
         }*/
+
+        header.x-major {
+            border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+            max-width: 940px;
+        }
+
+        .x-mobile {
+            display: none;
+        }
+
+        .x-com {
+            display: block;
+        }
+
+        .x-com nav ul li{
+            width: 130px;
+            height: 100px;
+            /*background-color: red;*/
+        }
+
+        .description-title {
+            max-width: 940px;
+            margin: 30px auto 30px auto;
+        }
+
         .container {
             max-width: 940px;
             margin: 30px auto 10px auto;
@@ -247,6 +280,7 @@
         }
 
         .footer {
+            max-width: 940px;
             display: block;
             border-top: 3px solid rgba(0, 0, 0, 1);
             height: 47px;
@@ -336,10 +370,6 @@
             margin-left: -0.25em;
         }
 
-        /* Lier, 2014. 8. 20. 오후 4:04 ==============================================
-           여기서는 캡션의 포지션이 지정이 되지 않아 숨겨졌던 것 같습니다. 이렇게 포지션과 같이 공통적으로 적용되는
-           스타일시트는 미디어쿼리보다는 공통영역에서 지정하는 것이 좋습니다.
-           ========================================================================== */
         .caption {
             left: 0;
             top: 0;
@@ -347,11 +377,24 @@
     }
 
 
+/*========================= 타블렛 스크린 영역 ================================================= */
+
     @media only screen and (min-width: 768px) and (max-width: 960px) {
         /* 여기는 타블렛 정도의 영역 - Lier, 2014. 8. 14. 오후 6:44 */
+
+        header.x-major {
+            border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+            max-width: 620px;
+        }
+
+        .x-major {
+            max-width: 620px;
+        }
+
         .container {
-            max-width: 768px;
+            max-width: 670px;
             margin: 30px auto 10px auto;
+            padding-left: 0;
             /*background-color: royalblue;*/
         }
 
@@ -359,7 +402,7 @@
             width: 300px;
             height: 180px;
             float: left;
-            margin: 0 20px 20px 50px;
+            margin: 0 20px 20px 0;
             padding: 0px;
             box-sizing: border-box;
         }
@@ -367,21 +410,110 @@
         .box-2 {
             width: 300px;
             height: 180px;
-            float: left;
-            margin: 0 20px 20px 50px;
+            float: none;
+            margin: 0 20px 20px 0;
             padding: 0px;
             box-sizing: border-box;
         }
 
-        /* Lier, 2014. 8. 20. 오후 4:00 ==============================================
-           요소검사를 잘 다루게 되면은 CSS가 어디가 잘못됐는지 빠르게 파악할 수 있어요 ^^.
-           보니까 위에 a 요소에는 마진이 들어가 있는데 caption 클래스에는 마진이 없더라구요. 그래서 밀려나 보였어요.
-           이렇게 caption 에도 box와 똑같이 마진을 넣으니 잘 보입니다. 근데 문제는 box, box-2로 나뉘어서
-           caption 클래스도 둘로 나눠 써야 하는 불편함이 생겼어요. 이것은 구조적으로 상당히 불편한 문제가 발생한
-           경우인데 스스로 터득해보가면서 어떻게 하면 더 쉽고 편리하게 작성할 수 있는지 공부할 좋은 기회인 것 같네요.
-           ========================================================================== */
+        .footer {
+            max-width: 620px;
+            display: block;
+            border-top: 3px solid rgba(0, 0, 0, 1);
+            height: 47px;
+            background-position: center;
+            text-align: center;
+        }
+
+        /*여기서부터 2단일 때의 transition 효과*/
+
         .caption {
-            margin: 0 20px 20px 50px;
+            margin: 0 20px 20px 0;
+        }
+
+        h1 {
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            font-family: "Lato";
+            font-weight: 700;
+        }
+
+        .caption-style-1 {
+            list-style-type: none;
+            margin: 0 0 0 25px;
+            padding: 0px;
+
+        }
+
+        .caption-style-1 li {
+            float: left;
+            padding: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .caption-style-1 li:hover .caption {
+            opacity: 1;
+
+        }
+
+        .caption-style-1 img {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            z-index: 4;
+        }
+
+        .caption-style-1 .caption {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .caption-style-1 .blur {
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 180px;
+            width: 300px;
+            z-index: 5;
+            position: absolute;
+        }
+
+        .caption-style-1 .caption-text h1 {
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+        }
+
+        .caption-style-1 .caption-text {
+            display: inline-block;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            width: 300px;
+            height: 180px;
+        }
+
+        .caption-style-1 .caption-text:before {
+            width: 0;
+            height: 100%;
+            content: '';
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: -0.25em;
+        }
+        .caption {
+            left: 0;
+            top: 0;
         }
     }
 
