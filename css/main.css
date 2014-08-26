@@ -159,14 +159,15 @@ header.x-major nav ul li a:hover{
 }*/
 
 .x-mobile nav ul li{
-    width: 110px;
+    width: 100px;
     height: 100px;
+    /*background-color: red;*/
 }
 
 
 header.x-major {
     border-bottom: 3.5px solid rgba(0, 0, 0, 1);
-    max-width: 340px;
+    max-width: 320px;
 }
 
 
@@ -253,7 +254,7 @@ textarea {
 }
 
 .footer{
-    max-width: 340px;
+    max-width: 320px;
     margin: 0 auto;
     display: block;
     border-top: 3.5px solid rgba(0, 0, 0, 1);
