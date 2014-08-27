@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<header class="x-major">
+    <div class="x-mobile">
+        <h1 class="x-logo-wrap">
+            <a class="x-logo ir" href="index.html">logo</a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="x-align-middle" style="text-align: left">
+                    <a href="." class="x-align-block" style="color: darkorange" >Works</a>
+                </li>
+                <li class="x-align-middle" style="margin: 0 -5px 0 -5px">
+                    <a href="." class="x-align-block">Profile</a>
+                </li>
+                <li class="x-align-middle" style="text-align: right">
+                    <a href="." class="x-align-block">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="x-com">
+        <h1 class="x-logo-wrap">
+            <a class="x-logo ir" href="index.html"></a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="x-align-middle">
+                    <a href="." class="x-align-block" style="color: darkorange">Works</a>
+                </li>
+                <li class="x-align-middle">
+                    <a href="." class="x-align-block">Profile</a>
+                </li>
+                <li class="x-align-middle">
+                    <a href="." class="x-align-block">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+<style>
+
+/*========================= 모바일 스크린 영역 ===================================================================== */
+    .description-title {
+    max-width: 300px;
+    margin: 30px auto 30px auto;
+    }
+
+    .container{
+        max-width: 300px;
+        margin: 30px auto 10px auto;
+    }
+
+    .box{
+        width: 300px;
+        height: 180px;
+        float: none;
+        margin: 0 auto 20px auto;
+        padding: 0px;
+        box-sizing: border-box;
+        display: block;
+    }
+    .box-2{
+        width: 300px;
+        height: 180px;
+        float: none;
+        padding: 0px;
+        margin-bottom: 20px;
+        display: block;
+        box-sizing: border-box;
+    }
+    /*.box .img {
+        width: 100%;
+        padding-top: 100%;
+        background-size: cover;
+        background-position: center;
+    }*/
+    .with-img{
+        padding-top: 0;
+    }
+
+    /*===== 모바일 - previous/next button ================== */
+
+    .x-align-middle-left{
+        float: left;
+    }
+    .x-align-middle-right{
+        float: right;
+    }
+
+    .x-bottom-menu{
+        clear: both;
+        border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+        max-width: 300px;
+        height: 20px;
+        margin: 20px auto 10px auto;
+        padding-bottom: 15px;
+        /*background-color: #b3d4fc;*/
+    }
+    .x-bottom-menu nav ul li{
+        width: 120px;
+        height: auto;
+        /*background-color: cornsilk*/
+    }
+    .x-bottom-menu nav ul li a{
+        color: rgba(0, 0, 0, 1);
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-family: "Lato";
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.2s ease-in;
+    }
+
+    .x-bottom-menu nav ul li a:hover{
+        color: rgba(0, 0, 0, 0.4);
+        transition: all 0.2s ease-in;
+    }
+
+    .x-bottom-menu .x-align-middle-left .x-left{
+        vertical-align: middle;
+        display: inline-block;
+        float: left;
+    }
+
+    .x-bottom-menu .x-align-middle-right .x-right{
+        vertical-align: middle;
+        display: inline-block;
+        float:right;
+    }
+
+/*===== 모바일 - opacity transition ================== */
+    h1 {
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        font-family: "Lato";
+        font-weight: 700;
+    }
+
+    .caption-style-1 {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .caption-style-1 li {
+        float: left;
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .caption-style-1 li:hover .caption {
+        opacity: 1;
+
+    }
+
+    .caption-style-1 img {
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        z-index: 4;
+    }
+
+    .caption-style-1 .caption {
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .caption-style-1 .blur {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 300px;
+        height: 180px;
+        z-index: 5;
+        position: absolute;
+    }
+
+    .caption-style-1 .caption-text h1 {
+        vertical-align: middle;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    .caption-style-1 .caption-text {
+        display: inline-block;
+        z-index: 10;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        width: 300px;
+        height: 180px;
+    }
+
+    .caption-style-1 .caption-text:before {
+        width: 0;
+        height: 100%;
+        content: '';
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: -0.25em;
+    }
+    .caption {
+        left: 0;
+        top: 0;
+    }
+
+    /*========================= 컴퓨터 스크린 영역 ================================================= */
+
+    @media only screen and (min-width: 960px) {
+        /* 여기는 컴퓨터 스크린 영역 - Lier, 2014. 8. 14. 오후 6:43 */
+        /*.box {
+            width: 33.3%;
+        }*/
+        header.x-major {
+            border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+            max-width: 940px;
+        }
+
+        .x-mobile {
+            display: none;
+        }
+
+        .x-com {
+            display: block;
+        }
+
+        .x-com nav ul li{
+            width: 130px;
+            height: 100px;
+            /*background-color: red;*/
+        }
+
+        .description-title {
+            max-width: 940px;
+            margin: 30px auto 30px auto;
+        }
+
+        .container {
+            max-width: 940px;
+            margin: 30px auto 10px auto;
+            /*background-color: royalblue;*/
+        }
+
+        .box {
+            width: 300px;
+            height: 180px;
+            float: left;
+            margin: 0 20px 20px 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box-2 {
+            width: 300px;
+            height: 180px;
+            float: left;
+            margin: 0 0 20px 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box .img {
+            width: 100%;
+            padding-top: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .with-img {
+            padding-top: 0;
+        }
+
+        .footer{
+            max-width: 940px;
+            margin: 0 auto;
+            display: block;
+            border-top: 3.5px solid rgba(0, 0, 0, 1);
+            height: 47px;
+            background-position: center;
+            text-align: center;
+        }
+
+        .footer .x-align-block {
+            display: inline-block;
+            height: 80px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: 0.8px;
+            font-size: 10px;
+            font-family: "Lato";
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /*===== 웹 - opacity transition ================== */
+        h1 {
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            font-family: "Lato";
+            font-weight: 700;
+        }
+        .caption-style-1 {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .caption-style-1 li {
+            float: left;
+            padding: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+        .caption-style-1 li:hover .caption {
+            opacity: 1;
+
+        }
+        .caption-style-1 img {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            z-index: 4;
+        }
+        .caption-style-1 .caption {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        .caption-style-1 .blur {
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 180px;
+            width: 300px;
+            z-index: 5;
+            position: absolute;
+        }
+        .caption-style-1 .caption-text h1 {
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+        }
+        .caption-style-1 .caption-text {
+            display: inline-block;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            width: 300px;
+            height: 180px;
+        }
+        .caption-style-1 .caption-text:before {
+            width: 0;
+            height: 100%;
+            content: '';
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: -0.25em;
+        }
+
+        /* Lier, 2014. 8. 20. 오후 4:04
+           여기서는 캡션의 포지션이 지정이 되지 않아 숨겨졌던 것 같습니다. 이렇게 포지션과 같이 공통적으로 적용되는
+           스타일시트는 미디어쿼리보다는 공통영역에서 지정하는 것이 좋습니다.
+           ========================================================================== */
+        .caption {
+            left: 0;
+            top: 0;
+        }
+        /*.ato-img{
+            width: 940px;
+            height: 12258px;
+            background-color: red;
+            margin: 30px auto 30px auto;
+            float: none;
+            box-sizing: border-box;
+        }*/
+        .ato-box {
+            width: 940px;
+            height: auto;
+            float: left;
+            margin: 0 120px 30px 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+        .x-align-middle-left{
+            float: left;
+        }
+        .x-align-middle-right{
+            float: right;
+        }
+
+        .x-bottom-menu{
+            clear: both;
+            border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+            max-width: 940px;
+            height: 20px;
+            margin: 20px auto 10px auto;
+            padding-bottom: 15px;
+            /*background-color: #b3d4fc;*/
+        }
+        .x-bottom-menu nav ul li{
+            width: 120px;
+            height: auto;
+            /*background-color: cornsilk*/
+        }
+        .x-bottom-menu nav ul li a{
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: 1px;
+            font-size: 12px;
+            font-family: "Lato";
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all 0.2s ease-in;
+        }
+
+        .x-bottom-menu nav ul li a:hover{
+            color: rgba(0, 0, 0, 0.4);
+            transition: all 0.2s ease-in;
+        }
+        
+        .x-bottom-menu .x-align-middle-left .x-left{
+            vertical-align: middle;
+            display: inline-block;
+            float: left;
+        }
+
+        .x-bottom-menu .x-align-middle-right .x-right{
+            vertical-align: middle;
+            display: inline-block;
+            float:right;
+        }
+
+        .text-clearfix{
+            width: 940px;
+            height: 180px;
+            margin: 0 0 0 0;
+        }
+
+        .z-align-middle{
+            display: inline-block;
+            margin: 10px 0 0 0;
+            width: 520px;
+            height: 100px;
+            /*background-color: red;*/
+            vertical-align: middle;
+        }
+
+        .z-align-block {
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: -0.2px;
+            font-size: 16px;
+            font-family: "Helvetica Neue";
+            text-decoration: none;
+            font-weight: 200;
+            line-height: 1.6em;
+            /*background-color: red;*/
+        }
+    }
+
+
+
+    /*========================= 타블렛 스크린 영역 ================================================= */
+
+
+    @media only screen and (min-width: 670px) and (max-width: 959px) {
+        /* 여기는 타블렛 정도의 영역 - Lier, 2014. 8. 14. 오후 6:44 */
+        header.x-major {
+            border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+            max-width: 620px;
+        }
+
+        .x-major {
+            max-width: 620px;
+        }
+
+
+        .description-title {
+            max-width: 620px;
+            margin: 30px auto 30px auto;
+            /*background-color: red;*/
+        }
+
+        .container {
+            max-width: 670px;
+            margin: 30px auto 10px auto;
+            padding: 0px;
+            /*background-color: royalblue;*/
+        }
+
+        .box {
+            width: 300px;
+            height: 180px;
+            float: left;
+            margin: 0 20px 20px 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box-2 {
+            width: 300px;
+            height: 180px;
+            float: none;
+            margin: 0 20px 20px 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .caption {
+            margin: 0 20px 20px 50px;
+        }
+
+        .footer{
+            max-width: 620px;
+            display: block;
+            border-top: 3px solid rgba(0, 0, 0, 1);
+            height: 47px;
+            background-position: center;
+            text-align: center;
+        }
+
+        .text-clearfix{
+            width: 340px;
+            height: 300px;
+            margin: 0 0 0 0;
+        }
+
+        .z-align-middle{
+            display: inline-block;
+            margin: 0 0 0 0;
+            width: 620px;
+            height: 110px;
+            /*background-color: red;*/
+            vertical-align: middle;
+        }
+        /*===== 타블렛 - previous/next button ================== */
+        .x-align-middle-left{
+            float: left;
+        }
+        .x-align-middle-right{
+            float: right;
+        }
+
+        .x-bottom-menu{
+            clear: both;
+            border-bottom: 3.5px solid rgba(0, 0, 0, 1);
+            max-width: 620px;
+            height: 20px;
+            margin: 20px auto 10px auto;
+            padding-bottom: 15px;
+            /*background-color: #b3d4fc;*/
+        }
+        .x-bottom-menu nav ul li{
+            width: 120px;
+            height: auto;
+            /*background-color: cornsilk*/
+        }
+        .x-bottom-menu nav ul li a{
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: 1px;
+            font-size: 12px;
+            font-family: "Lato";
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all 0.2s ease-in;
+        }
+
+        .x-bottom-menu nav ul li a:hover{
+            color: rgba(0, 0, 0, 0.4);
+            transition: all 0.2s ease-in;
+        }
+
+        .x-bottom-menu .x-align-middle-left .x-left{
+            vertical-align: middle;
+            display: inline-block;
+            float: left;
+        }
+
+        .x-bottom-menu .x-align-middle-right .x-right{
+            vertical-align: middle;
+            display: inline-block;
+            float:right;
+        }
+
+        /*===== 타블렛 - opacity transition ================== */
+
+
+        .caption {
+            margin: 0 20px 20px 0;
+        }
+
+        h1 {
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            font-family: "Lato";
+            font-weight: 700;
+        }
+
+        .caption-style-1 {
+            list-style-type: none;
+            margin: 0 0 0 25px;
+            padding: 0px;
+
+        }
+
+        .caption-style-1 li {
+            float: left;
+            padding: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .caption-style-1 li:hover .caption {
+            opacity: 1;
+
+        }
+
+        .caption-style-1 img {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            z-index: 4;
+        }
+
+        .caption-style-1 .caption {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .caption-style-1 .blur {
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 180px;
+            width: 300px;
+            z-index: 5;
+            position: absolute;
+        }
+
+        .caption-style-1 .caption-text h1 {
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+        }
+
+        .caption-style-1 .caption-text {
+            display: inline-block;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            width: 300px;
+            height: 180px;
+        }
+
+        .caption-style-1 .caption-text:before {
+            width: 0;
+            height: 100%;
+            content: '';
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: -0.25em;
+        }
+        .caption {
+            left: 0;
+            top: 0;
+        }
+    }
+
+</style>
+
+</div>
+
+<div class="description-title">
+    <header class="text-clearfix">
+        <div class="x-title">
+            <span class="y-align-middle">
+                <p class="y-align-block">Ain't no smart</p>
+                <p class="y-align-sub">Illustration</p>
+            </span>
+            <span class="z-align-middle">
+                <p class="z-align-block">Everyone is just watching their SMART phone.<br>Illustration artwork for fun.</p>
+            </span>
+        </div>
+    </header>
+    <div class="ato-img">
+        <a class="ato-box with-img">
+            <img src="css/no_smart_detail.png" width="100%" height="100%"/>
+        </a>
+    </div>
+</div>
+<div class="x-bottom-menu">
+    <nav>
+        <ul>
+            <li class="x-align-middle-left">
+                <a class="x-left" href="ecotour.html">previous</a>
+            </li>
+            <li class="x-align-middle-right">
+                <a class="x-right" href="twomen.html">next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="container clearfix">
+    <ul class="caption-style-1">
+        <li>
+            <a class="box with-img" href="work.html">
+                <img src="css/ato.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href="work.html">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>ATO App</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box with-img" href="tour_icon.html">
+                <img src="css/tour_icon.png" width="100%" height="100%"/>
+            </a>
+
+            <a class="caption" href="tour_icon.html">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Touristic icons</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box-2 with-img" href="css/ecotour.png">
+                <img src="css/ecotour.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href="tour_icon.html">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Ecotour App</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box with-img" href="css/no_smart.png">
+                <img src="css/no_smart.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href="no_smart.html">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Ain't no smart</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box with-img" href="css/twomen_cafe.png">
+                <img src="css/twomen_cafe.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href="twomen.html">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Twomen's cafe graphic</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box-2 with-img" href="css/birthday_card.png">
+                <img src="css/birthday_card.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href="birthday_card.html">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Birthday card</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box with-img" href="css/kt.png">
+                <img src="css/kt.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href=".">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>OLLEH TV app</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box with-img" href="css/lolnote.png">
+                <img src="css/lolnote.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href=".">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Lolnote app</h1>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="box-2 with-img" href="css/info.png">
+                <img src="css/info.png" width="100%" height="100%"/>
+            </a>
+            <a class="caption" href=".">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>medical infographic</h1>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<footer class="footer">
+        <a class="x-align-block">© 2014 Designed by YoonJ</a>
+    </li>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
+</html>
